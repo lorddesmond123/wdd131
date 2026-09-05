@@ -21,9 +21,10 @@ header {
   padding: 12px 0;
 }
 
-.nav-menu a {
-  color: #c0c6d0;
-  text-decoration: none;
+  .nav-menu a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+
 }
 
 
