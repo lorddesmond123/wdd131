@@ -1,0 +1,113 @@
+
+
+
+*{
+    margin: 0;
+	padding: 0;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+h1 {
+	font-size: 1rem;
+	padding: 1rem;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+}
+
+#course-title {
+  padding: 30px;
+  text-align: center;
+  display: block;
+  background-color: rgb(10, 118, 241);
+}
+header {
+  background-color: rgb(10, 118, 241);
+}
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: #ace;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+
+ header, main, footer{
+    max-width: 90%;
+    margin: 1rem auto;
+    border: 1px solid #f3f1f1;
+    background-color: #3a7cf8; 
+}
+img{
+    max-width: 100%; height: auto;
+}
+h1{
+   background-color: #3a7cf8;  
+}
+.temple-gallery {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 15px;
+  padding: 20px;
+}
+
+
+figure {
+   background-color: #ffffff;
+  padding: 20px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #17197a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}

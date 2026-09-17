@@ -1,1 +1,44 @@
 
+
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+    justify-content: space-evenly;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+   h1{
+        background-color: black;
+        color: white;
+    } 
+    
+.temple-gallery {
+  padding: 10px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+}
+
+
+figure{
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+}
+
+
+
+
