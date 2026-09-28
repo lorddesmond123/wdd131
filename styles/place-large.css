@@ -1,0 +1,97 @@
+@media screen and (min-width: 768px) {
+
+    body {
+        background-color: black;
+    }
+
+    /* GRID LAYOUT */
+    .hero {
+        position: relative;
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        min-height: 620px;
+    }
+
+    /* Hero image occupies the entire grid */
+    .hero picture {
+        grid-column: 1 / 3;
+        grid-row: 1;
+
+        width: 100%;
+        height: 620px;
+    }
+
+    .hero picture img {
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
+    }
+
+    /* General card styling */
+    .info-card {
+        position: relative;
+
+        width: 300px;
+        padding: 20px;
+
+        background-color: rgba(255, 255, 255, 0.9);
+
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+        border: 0;
+
+        z-index: 2;
+    }
+
+    .info-card h2 {
+        margin: 0 0 15px -40px;
+        padding: 15px 20px;
+
+        text-align: left;
+    }
+
+    /* DATA CARD */
+    .data-card {
+        grid-column: 1;
+        grid-row: 1;
+
+        align-self: start;
+        justify-self: start;
+
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    /* WEATHER CARD */
+    .weather-card {
+        grid-column: 2;
+        grid-row: 1;
+
+        align-self: center;
+        justify-self: end;
+
+        margin-right: 30px;
+    }
+
+    /* Hide SVG weather icon on wider screen */
+    .hero .weather-icon {
+        display: none;
+    }
+
+    /* Required pseudo-element */
+    .hero .weather-card h2::after {
+        content: "⛅";
+        margin-left: 10px;
+    }
+
+    .info-content p {
+        margin: 12px 0;
+    }
+
+    footer {
+        padding: 25px;
+    }
+}

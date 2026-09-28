@@ -1,0 +1,18 @@
+const temperature = 10;
+const windSpeed = 5;
+
+function calculateWindChill(temp, speed) {
+    return 13.12 + (0.6215 * temp) - (11.37 * Math.pow(speed, 0.16)) + (0.3965 * temp * Math.pow(speed, 0.16));
+}
+
+const windChillElement = document.querySelector("#wind-chill");
+
+if (temperature <= 10 && windSpeed > 4.8) {
+    const result = calculateWindChill(temperature, windSpeed);
+    windChillElement.textContent = result.toFixed(1) + " °C";
+} else {
+    windChillElement.textContent = "N/A";
+}
+
+document.querySelector("#temperature").textContent = temperature + " °C";
+document.querySelector("#wind-speed").textContent = windSpeed + " km/h";
