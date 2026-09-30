@@ -1,0 +1,35 @@
+/* Center the whole page content in one column */
+main {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Stack the images in a single centered column */
+img {
+    display: block;
+    margin: 2rem auto;
+    width: 400px;
+    height: 600px;
+    background-color: black;
+    animation: fadeIn 2s;
+}
+
+/* Fade each image in from black */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}

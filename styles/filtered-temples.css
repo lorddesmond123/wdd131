@@ -1,0 +1,345 @@
+/* ==============================
+   GENERAL STYLES
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #222;
+}
+
+
+/* ==============================
+   HEADER
+================================= */
+
+header {
+    background-color: #4b176d;
+    color: white;
+
+    padding: 1rem;
+
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+
+/* ==============================
+   HAMBURGER BUTTON
+================================= */
+
+#menu {
+    display: none;
+
+    border: none;
+
+    background: none;
+
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    z-index: 1001;
+}
+
+
+/* ==============================
+   NAVIGATION
+================================= */
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   MAIN
+================================= */
+
+main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+
+    margin: 1rem 0 1.5rem;
+}
+
+
+/* ==============================
+   TEMPLE GRID
+================================= */
+
+/* TWO COLUMNS */
+
+.temple-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+
+/* ==============================
+   TEMPLE CARD
+================================= */
+
+.temple-card {
+    background-color: #f7f7f7;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    padding: 1rem;
+
+    text-align: center;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* ==============================
+   TEMPLE NAME
+================================= */
+
+.temple-card h3 {
+    margin: 0 0 0.8rem;
+
+    font-size: 1.3rem;
+}
+
+
+/* ==============================
+   TEMPLE INFORMATION
+================================= */
+
+.temple-card p {
+    margin: 0.35rem 0;
+
+    line-height: 1.4;
+
+    text-align: left;
+}
+
+
+/* ==============================
+   TEMPLE IMAGE
+================================= */
+
+.temple-card img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin-top: 1rem;
+
+    border-radius: 5px;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #4b176d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+
+/* ==============================
+   MOBILE MENU
+================================= */
+
+@media screen and (max-width: 700px) {
+
+    header {
+        min-height: 55px;
+
+        padding: 0.7rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+
+    /* Show hamburger */
+
+    #menu {
+        display: block;
+    }
+
+
+    /* Hide navigation initially */
+
+    nav {
+        display: none;
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100vh;
+
+        background-color: #4b176d;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 1.5rem;
+
+        z-index: 1000;
+    }
+
+
+    /* Navigation when opened */
+
+    nav.open {
+        display: flex;
+    }
+
+
+    nav a {
+        color: white;
+
+        font-size: 1.4rem;
+
+        padding: 0.5rem;
+    }
+
+
+    /* Keep two columns */
+
+    .temple-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0.7rem;
+    }
+
+
+    .temple-card {
+        padding: 0.6rem;
+    }
+
+
+    .temple-card h3 {
+        font-size: 0.95rem;
+    }
+
+
+    .temple-card p {
+        font-size: 0.65rem;
+
+        line-height: 1.3;
+    }
+
+
+    .temple-card img {
+        height: 150px;
+
+        margin-top: 0.7rem;
+    }
+}
+
+
+/* ==============================
+   VERY SMALL PHONES
+================================= */
+
+@media screen and (max-width: 380px) {
+
+    .temple-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0.5rem;
+    }
+
+    .temple-card {
+        padding: 0.4rem;
+    }
+
+    .temple-card img {
+        height: 120px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
