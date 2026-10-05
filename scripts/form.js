@@ -32,7 +32,7 @@ const products = [
 
 
 /* ------------------------------
-   Populate Product Select
+   Product Dropdown
 ------------------------------ */
 
 const productSelect = document.querySelector("#product");
@@ -63,15 +63,11 @@ const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
 if (currentYear) {
-
     currentYear.textContent = new Date().getFullYear();
-
 }
 
 if (lastModified) {
-
     lastModified.textContent = document.lastModified;
-
 }
 
 
@@ -86,9 +82,7 @@ if (reviewCount) {
     const url = new URLSearchParams(window.location.search);
 
     const product = url.get("product");
-
     const rating = url.get("rating");
-
     const installed = url.get("installed");
 
     if (product && rating && installed) {
@@ -108,5 +102,4 @@ if (reviewCount) {
             Number(localStorage.getItem("reviewCount")) || 0;
 
     }
-
 }
