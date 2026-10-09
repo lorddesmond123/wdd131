@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Send feedback about the Mangu Town Guide.">
+
+    <meta name="author" content="Henga Liambee Desmond">
+
+    <title>Contact | Mangu Guide</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <a class="logo" href="index.html">Mangu Guide</a>
+
+        <button class="menu-button" id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="businesses.html">Businesses</a>
+            <a href="history.html">History</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <div>
+            <p class="small-heading">GET IN TOUCH</p>
+            <h1>Contact & Feedback</h1>
+            <p>
+                Help us improve the Mangu Town Guide.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+
+        <div class="form-container">
+
+            <div class="section-heading">
+                <p class="small-heading">YOUR OPINION MATTERS</p>
+                <h2>Send Us a Message</h2>
+            </div>
+
+            <form id="feedback-form" action="contact.html" method="get">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">What is your message about?</label>
+
+                    <select id="topic" name="topic" required>
+                        <option value="">Choose one</option>
+                        <option value="business">Local Business</option>
+                        <option value="history">History</option>
+                        <option value="website">Website</option>
+                        <option value="suggestion">Suggestion</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        minlength="10"
+                        required></textarea>
+
+                    <small>
+                        Please enter at least 10 characters.
+                    </small>
+                </div>
+
+                <button class="button" type="submit">
+                    Send Feedback
+                </button>
+
+                <p id="form-message" class="form-message"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+
+        <div>
+            <h2>Mangu Guide</h2>
+            <p>
+                A student community guide created for WDD 131.
+            </p>
+        </div>
+
+        <div>
+            <h3>Pages</h3>
+            <a href="index.html">Home</a>
+            <a href="businesses.html">Businesses</a>
+            <a href="history.html">History</a>
+            <a href="contact.html">Contact</a>
+            <a href="references.html">References</a>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        &copy; <span id="current-year"></span> Mangu Town Guide
+    </p>
+</footer>
+
+</body>
+</html>

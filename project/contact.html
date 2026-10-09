@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Contact the Mangu Town Guide with questions, suggestions, corrections, or community feedback."
+    >
+
+    <meta name="author" content="Mangu Town Guide">
+
+    <title>Mangu Town Guide | Contact</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo-mark">M</div>
+        <span>Mangu Town Guide</span>
+    </div>
+
+    <button class="menu-button" type="button" aria-label="Open navigation menu">
+        ☰ Menu
+    </button>
+
+    <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="businesses.html">Local Businesses</a>
+        <a href="history.html">History</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="references.html">References</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h1>Contact and Feedback</h1>
+
+        <p>
+            Do you have a suggestion, correction, question, or useful
+            information about Mangu Town? Use the form below to send
+            your feedback.
+        </p>
+    </section>
+
+    <section>
+
+        <form id="contact-form">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    minlength="2"
+                    autocomplete="name"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Feedback Topic</label>
+
+                <select id="topic" name="topic" required>
+                    <option value="">Choose a topic</option>
+                    <option value="business">Local Business</option>
+                    <option value="history">History</option>
+                    <option value="community">Community Information</option>
+                    <option value="correction">Correction</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="7"
+                    required
+                    minlength="10"
+                ></textarea>
+            </div>
+
+            <button class="button" type="submit">
+                Send Feedback
+            </button>
+
+            <p id="form-message" class="form-message"></p>
+
+        </form>
+
+    </section>
+
+    <section>
+        <h2>Why Your Feedback Matters</h2>
+
+        <p>
+            Community feedback can help improve the accuracy and usefulness
+            of this guide. Please provide clear and respectful information.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="current-year"></span> Mangu Town Guide
+    </p>
+
+    <p>
+        Created for WDD 131
+    </p>
+
+    <p>
+        <a href="references.html">References and Sources</a>
+    </p>
+
+    <p id="last-modified"></p>
+</footer>
+
+</body>
+</html>

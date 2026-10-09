@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Find local businesses in Mangu Town, Plateau State, including hospitality, petroleum, technology, and market businesses."
+    >
+
+    <meta name="author" content="Mangu Town Guide">
+
+    <title>Mangu Town Guide | Local Businesses</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo-mark">M</div>
+        <span>Mangu Town Guide</span>
+    </div>
+
+    <button class="menu-button" type="button" aria-label="Open navigation menu">
+        ☰ Menu
+    </button>
+
+    <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="businesses.html" aria-current="page">Local Businesses</a>
+        <a href="history.html">History</a>
+        <a href="contact.html">Contact</a>
+        <a href="references.html">References</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h1>Local Businesses in Mangu</h1>
+
+        <p>
+            Explore some businesses and community services found in
+            Mangu Town. Use the search box to find a business by name
+            or category.
+        </p>
+
+        <label for="business-search">Search businesses</label>
+
+        <input
+            type="search"
+            id="business-search"
+            placeholder="Search by name or category..."
+        >
+
+        <p id="business-count" class="result-count"></p>
+    </section>
+
+    <section>
+        <div id="business-list" class="business-list">
+        </div>
+
+        <p id="no-results" class="no-results">
+            No businesses match your search.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="current-year"></span> Mangu Town Guide
+    </p>
+
+    <p>
+        Created for WDD 131
+    </p>
+
+    <p>
+        <a href="references.html">References and Sources</a>
+    </p>
+
+    <p id="last-modified"></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+/* =========================================
+   MANGU TOWN GUIDE
+   WDD 131 FINAL PROJECT
+   ========================================= */
+
+/* ---------- Base ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #f7f3e9;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #24523a;
+}
+
+a:hover {
+    color: #8b681f;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: #24523a;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.logo-mark {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #d9a441;
+    color: #24523a;
+
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* ---------- Navigation ---------- */
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.site-nav a {
+    padding: 0.5rem 0.8rem;
+
+    color: white;
+    text-decoration: none;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    background-color: #d9a441;
+    color: #24523a;
+}
+
+.site-nav a[aria-current="page"] {
+    background-color: #d9a441;
+    color: #24523a;
+    font-weight: bold;
+}
+
+.menu-button {
+    display: none;
+
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+
+    padding: 0.5rem 1rem;
+
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+
+/* ---------- Main ---------- */
+
+main {
+    width: 92%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    color: #24523a;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+
+/* ---------- Sections ---------- */
+
+section {
+    background-color: white;
+
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+
+    border-left: 5px solid #d9a441;
+    border-radius: 6px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.hero-text {
+    padding: 1.5rem;
+}
+
+.hero-text h1 {
+    margin-top: 0;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.button {
+    display: inline-block;
+
+    margin-top: 0.5rem;
+    padding: 0.7rem 1rem;
+
+    background-color: #d9a441;
+    color: #24523a;
+
+    border: 2px solid #d9a441;
+    border-radius: 4px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #24523a;
+    border-color: #24523a;
+    color: white;
+}
+
+
+/* ---------- Business Preview ---------- */
+
+.business-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.business-preview article {
+    padding: 1rem;
+
+    border: 1px solid #d9a441;
+    border-radius: 6px;
+
+    background-color: #f7f3e9;
+}
+
+.business-preview h3 {
+    margin-top: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* ---------- Business Search ---------- */
+
+label {
+    display: block;
+    margin-bottom: 0.35rem;
+
+    font-weight: bold;
+    color: #24523a;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 0.75rem;
+
+    border: 1px solid #777777;
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #d9a441;
+    border-color: #24523a;
+}
+
+.result-count {
+    font-weight: bold;
+    color: #24523a;
+}
+
+.business-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.business-card {
+    overflow: hidden;
+
+    border: 1px solid #d9a441;
+    border-radius: 6px;
+
+    background-color: #f7f3e9;
+}
+
+.business-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.business-card-content {
+    padding: 1rem;
+}
+
+.business-card h2 {
+    margin-top: 0;
+    font-size: 1.35rem;
+}
+
+.business-category {
+    font-weight: bold;
+    color: #24523a;
+}
+
+.business-details {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.business-details li {
+    margin-bottom: 0.4rem;
+}
+
+.no-results {
+    display: none;
+
+    padding: 1rem;
+
+    background-color: #f7f3e9;
+
+    border-left: 4px solid #d9a441;
+}
+
+
+/* ---------- History Timeline ---------- */
+
+.timeline {
+    border-left: 4px solid #d9a441;
+    padding-left: 1rem;
+}
+
+.timeline-item {
+    margin-bottom: 1rem;
+}
+
+.timeline-button {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+
+    border: 1px solid #d9a441;
+    border-radius: 4px;
+
+    background-color: #f7f3e9;
+    color: #24523a;
+
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: bold;
+
+    text-align: left;
+    cursor: pointer;
+}
+
+.timeline-button:hover,
+.timeline-button:focus {
+    background-color: #d9a441;
+}
+
+.timeline-content {
+    display: none;
+
+    padding: 1rem;
+
+    border: 1px solid #d9a441;
+    border-top: none;
+
+    background-color: white;
+}
+
+.timeline-content.open {
+    display: block;
+}
+
+
+/* ---------- Contact Form ---------- */
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+
+    font-weight: bold;
+}
+
+.form-message.success {
+    background-color: #e5f1e8;
+    color: #24523a;
+
+    border-left: 4px solid #24523a;
+}
+
+.form-message.error {
+    background-color: #f8e5e5;
+    color: #8a1f1f;
+
+    border-left: 4px solid #8a1f1f;
+}
+
+
+/* ---------- References ---------- */
+
+.reference-list {
+    padding-left: 1.5rem;
+}
+
+.reference-list li {
+    margin-bottom: 0.75rem;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #24523a;
+    color: white;
+
+    padding: 1.5rem;
+
+    text-align: center;
+}
+
+footer a {
+    color: #d9a441;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 799px) {
+
+    .menu-button {
+        display: inline-block;
+        margin-bottom: 0.75rem;
+    }
+
+    .site-nav {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .site-nav.open {
+        display: flex;
+    }
+
+    .site-nav a {
+        border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .business-preview {
+        grid-template-columns: 1fr;
+    }
+
+    .business-list {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 94%;
+    }
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 800px) {
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        align-items: stretch;
+    }
+
+    .hero img {
+        height: 100%;
+        min-height: 320px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 2rem;
+    }
+
+    .hero-text .button {
+        align-self: flex-start;
+    }
+}
